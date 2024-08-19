@@ -1,73 +1,177 @@
-# Introduction to Programming
+# JavaScript 178: Introduction to JavaScript
 
-Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer "languages," such as SQL, Java, Python, and C++.
+---
 
-Example:
-```js
-console.log("Hello, World!");
-```
+## Workshop Overview
+- **Objective:**
+  - Introduce participants to JavaScript, its history, and its importance in web development.
+  - Cover the basics of JavaScript syntax, data types, variables, and operators.
+  - Provide hands-on examples and exercises.
 
-### How does computer work?
+---
 
-2 main components of a computer are hardware and software. Hardware is the physical parts of a computer, such as the monitor, keyboard, and hard drive. Software is the set of instructions that tell the hardware what to do. Software is divided into two categories: application software and system software. Application software is a program that performs a specific task, such as word processing or accounting. System software is the operating system, which controls the basic functions of the computer.
+## What is JavaScript?
+- **Definition:**
+  - JavaScript is a versatile, high-level programming language.
+  - It is primarily used to add interactive behavior to web pages.
+- **Key Features:**
+  - Dynamic typing
+  - Object-oriented
+- **Importance in Web Development:**
+  - Enables interactivity
+  - Powers client-side scripts
+  - Widely supported across all browsers
 
-### What is a programming language?
+---
 
-A programming language is a set of rules that allows a programmer to write instructions for a computer to execute. There are many different programming languages, each with its own set of rules and syntax. Some of the most popular programming languages include Java, Python, C++, and SQL.
+## History of JavaScript
+- **Origins:**
+  - Developed by Brendan Eich in 1995
+  - Originally named Mocha, then LiveScript, and finally JavaScript
+- **Evolution:**
+  - ECMAScript standardization in 1997
+  - Introduction of major features in ES6 (2015) and beyond
+- **Current State:**
+  - Modern JavaScript is versatile, used both on the client-side and server-side (Node.js).
 
-Codes below are examples of how to print "Hello, World!" in different programming languages:
+---
 
+## Setting Up Your Environment
+- **Tools Needed:**
+  - **Text Editor:** Visual Studio Code or others
+  - **Browser:** Chrome, Firefox, etc.
+  - **Console:** Access through Developer Tools in browsers
+- **Running JavaScript:**
+  - Inline in HTML using `<script>` tags
+  - External `.js` files linked to HTML
+  - Running scripts directly in the browser console
 
-```python
-print("Hello, World!")
-```
+---
 
-```cpp
-#include <iostream>
-using namespace std;
+## Basic Syntax and Structure
+- **Variables:**
+  - **Declaring Variables:**
+    - `var`, `let`, and `const`
+    - Example: 
+      ```javascript
+      let name = "John";
+      const birthYear = 1990;
+      var isActive = true;
+      ```
+  - **Difference between `var`, `let`, and `const`:**
+    - `var` has function scope, can be redeclared and updated.
+    - `let` has block scope, cannot be redeclared, but can be updated.
+    - `const` has block scope, cannot be redeclared or updated.
 
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
-}
-```
+---
 
-```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+## Data Types
+- **Primitive Data Types:**
+  - **String:**
+    - Represents text
+    - Example: 
+      ```javascript
+      let greeting = "Hello, World!";
+      console.log(greeting); // Outputs: Hello, World!
+      ```
+  - **Number:**
+    - Represents both integers and floating-point numbers
+    - Example:
+      ```javascript
+      let age = 25;
+      let price = 19.99;
+      console.log(age); // Outputs: 25
+      console.log(price); // Outputs: 19.99
+      ```
+  - **Boolean:**
+    - Represents true/false values
+    - Example:
+      ```javascript
+      let isStudent = true;
+      console.log(isStudent); // Outputs: true
+      ```
+  - **Undefined:**
+    - A variable that has been declared but not assigned a value
+    - Example:
+      ```javascript
+      let uninitializedVar;
+      console.log(uninitializedVar); // Outputs: undefined
+      ```
+  - **Null:**
+    - Represents the intentional absence of any object value
+    - Example:
+      ```javascript
+      let emptyValue = null;
+      console.log(emptyValue); // Outputs: null
+      ```
 
-```cs
-using System;
+---
 
-class Program {
-    static void Main() {
-        Console.WriteLine("Hello, World!");
-    }
-}
-```
+## Operators
+- **Arithmetic Operators:**
+  - Used for basic mathematical operations
+  - **Examples:**
+    ```javascript
+    let sum = 10 + 5; // 15
+    let difference = 10 - 5; // 5
+    let product = 10 * 5; // 50
+    let quotient = 10 / 5; // 2
+    let remainder = 10 % 3; // 1
+    console.log(sum, difference, product, quotient, remainder);
+    ```
+- **Comparison Operators:**
+  - Used to compare two values
+  - **Examples:**
+    ```javascript
+    let isEqual = 10 == "10"; // true (loose equality)
+    let isStrictEqual = 10 === "10"; // false (strict equality)
+    let isNotEqual = 10 != "10"; // false
+    let isGreater = 10 > 5; // true
+    let isLess = 10 < 5; // false
+    console.log(isEqual, isStrictEqual, isNotEqual, isGreater, isLess);
+    ```
+- **Logical Operators:**
+  - Used to combine multiple conditions
+  - **Examples:**
+    ```javascript
+    let andCondition = (5 > 3) && (10 > 8); // true
+    let orCondition = (5 > 3) || (10 < 8); // true
+    let notCondition = !(5 > 3); // false
+    console.log(andCondition, orCondition, notCondition);
+    ```
+- **Assignment Operators:**
+  - Used to assign values to variables
+  - **Examples:**
+    ```javascript
+    let x = 10;
+    x += 5; // x = x + 5; -> 15
+    x -= 2; // x = x - 2; -> 13
+    x *= 3; // x = x * 3; -> 39
+    x /= 3; // x = x / 3; -> 13
+    console.log(x);
+    ```
 
-### What is code & syntax?
+---
 
-Code is a set of instructions that tell a computer how to perform a task. Code is written in a programming language, which has its own set of rules and syntax. Syntax is the set of rules that govern how code is written. Each programming language has its own syntax, which must be followed in order for the code to be executed correctly.
+## Hands-On Exercises
+- **Task 1:** Declare variables using `var`, `let`, and `const`, and print their values to the console.
+- **Task 2:** Use arithmetic operators to perform simple calculations and display the results.
+- **Task 3:** Compare different values using comparison operators and log the results.
 
+---
 
-### What is a code editor?
+## Debugging and Tools
+- **Debugging in the Browser:**
+  - Using the console to view errors and test code snippets
+  - Breakpoints and stepping through code
+- **Popular Tools:**
+  - **Linter:** ESLint for maintaining code quality
+  - **Formatter:** Prettier for consistent code style
 
-A code editor is a program that allows a programmer to write, edit, and save code. Code editors often have features such as syntax highlighting, auto-completion, and debugging tools to help the programmer write code more efficiently.
+---
 
-### What is code execution?
-
-Code execution is the process of running a program on a computer. When a program is executed, the computer reads the code and follows the instructions to perform a task. If there are any errors in the code, the program may not run correctly or may produce unexpected results.
-
-### How JavaScript is executed?
-
-JavaScript is a programming language that is executed by a web browser. When a web page is loaded, the browser reads the JavaScript code and executes it to perform tasks such as updating the page content, handling user input, and interacting with the server.
-
-OR
-
-JavaScript can also be executed by a server using Node.js. Node.js is a runtime environment that allows JavaScript to be executed outside of a web browser. Node.js is often used to build server-side applications and APIs.
-
+## Q&A Session
+- **Open the floor for questions:**
+  - Clarify doubts
+  - Discuss real-world applications of JavaScript
+  - Provide additional resources for learning
