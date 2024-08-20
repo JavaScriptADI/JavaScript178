@@ -6,6 +6,8 @@
 - [JavaScript W3Schools](https://www.w3schools.com/js/default.asp)
 
 
+### Assignments
+- [Assignment 1](https://classroom.github.com/a/KgxDrLXy)
 
 ### Table of Contents
 - [Introduction](./docs/introduction.md)
