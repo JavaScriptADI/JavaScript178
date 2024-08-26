@@ -11,3 +11,15 @@ console.log('is Gen Z', isGenZ);
 console.log('is not Gen Z', !isGenZ);
 
 
+const A = false;
+const B = false;
+
+console.log(
+    !(A && B), 
+    (!A) || (!B)
+);
+
+console.log(
+    !(A || B), // true
+    (!A) && (!B) // true
+)
