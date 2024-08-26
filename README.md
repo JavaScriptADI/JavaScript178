@@ -8,6 +8,7 @@
 
 ### Assignments
 - [Assignment 1](https://classroom.github.com/a/KgxDrLXy)
+- [Assignment 2](https://classroom.github.com/a/IaOrwB6R)
 
 ### Table of Contents
 - [Introduction](./docs/introduction.md)
