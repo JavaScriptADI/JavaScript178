@@ -9,6 +9,8 @@
 ### Assignments
 - [Assignment 1](https://classroom.github.com/a/KgxDrLXy)
 - [Assignment 2](https://classroom.github.com/a/IaOrwB6R)
+- [Assignment 3-1](https://classroom.github.com/a/sPeRB6IA)
+- [Assignment 3-2](https://classroom.github.com/a/NNRL68K5)
 
 ### Table of Contents
 - [Introduction](./docs/introduction.md)
