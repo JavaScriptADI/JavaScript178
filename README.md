@@ -12,6 +12,7 @@
 - [Assignment 3-1](https://classroom.github.com/a/sPeRB6IA)
 - [Assignment 3-2](https://classroom.github.com/a/NNRL68K5)
 - [Assignment 4 (Arrays)](https://classroom.github.com/a/iIr6FIll)
+- [Assignment 5 (Fetch)](https://classroom.github.com/a/Kf0EP3z4)
 
 ### Table of Contents
 - [Introduction](./docs/introduction.md)
