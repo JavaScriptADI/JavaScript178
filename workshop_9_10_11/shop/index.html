@@ -24,6 +24,15 @@
             line-clamp: 4;
             overflow: hidden;
         }
+
+        .category-link {
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .category-link:hover {
+            background: var(--bs-light);
+        }
     </style>
 </head>
 
@@ -34,6 +43,9 @@
                 <form id="filter-form">
                     <h4 class="text-center">Categories</h4>
                     <div id="category-filters">
+                        <div class="category-link" id="all-products">
+                            <span class="text-secondary">All</span>
+                        </div>
                     </div>
                     <h4 class="text-center">Price</h4>
                     <div class="row g-1 mb-3">
@@ -50,25 +62,26 @@
         </div>
         <div class="vh-100 col-10 p-2 d-flex flex-column justify-content-between gap-2">
             <div>
-                <form class="d-flex gap-2">
-                    <input type="search" class="form-control" placeholder="Search..." />
+                <form class="d-flex gap-2" id="search-form">
+                    <input name="q" type="search" class="form-control" placeholder="Search..." />
                     <button class="btn btn-success">Search</button>
                 </form>
             </div>
             <div class="flex-grow-1 rounded overflow-y-scroll py-4">
+             
+                <div class=" row row-cols-4 g-4 w-100 mx-auto" id="products">
+
+                </div>
                 <div id="loading">
                     <div class="d-flex align-items-center mx-auto justify-content-center" >
                         <div class="spinner-border spinner-border"  style="width: 10rem; height: 10rem;" aria-hidden="true"></div>
                     </div>
                 </div>
-                <div class=" row row-cols-4 g-4 w-100 mx-auto" id="products">
-
-                </div>
             </div>
 
         </div>
 
-        <script src="./src/homePage.js"></script>
+        <script src="./src/homePage.js" type="module"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
