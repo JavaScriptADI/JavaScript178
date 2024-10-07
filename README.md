@@ -14,6 +14,7 @@
 - [Assignment 4 (Arrays)](https://classroom.github.com/a/iIr6FIll)
 - [Assignment 5 (Fetch)](https://classroom.github.com/a/Kf0EP3z4)
 - [Assignment 6 (DOM)](https://classroom.github.com/a/nJqsOf7_)
+- [Final Project](https://classroom.github.com/a/LQxKvCwu)
 
 ### Table of Contents
 - [Introduction](./docs/introduction.md)
